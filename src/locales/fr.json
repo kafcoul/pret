@@ -19,22 +19,22 @@
     }
   },
   "hero": {
-    "badge": "Prêteur alternatif depuis 1998",
-    "title": "La solution de financement temporaire à Québec",
-    "subtitle": "Prêts rapides à obtenir avec garanties immobilières. Financement approuvé en aussi peu que 48 heures, sans égard à votre dossier de crédit.",
+    "badge": "Prêteur alternatif canadien depuis 1998",
+    "title": "La solution de financement alternatif partout au Canada",
+    "subtitle": "Prêts rapides avec garanties immobilières approuvés en aussi peu que 48 heures, peu importe votre province ou votre dossier de crédit.",
     "cta1": "Faire une demande en ligne",
     "cta2": "Nos services"
   },
   "trust": {
     "1": { "title": "Approbation en 48h", "desc": "Réponse rapide garantie" },
-    "2": { "title": "Confidentialité assurée", "desc": "Vos informations sont protégées" },
+    "2": { "title": "Partout au Canada", "desc": "Service dans toutes les provinces" },
     "3": { "title": "Depuis 1998", "desc": "Plus de 25 ans d'expérience" }
   },
   "footer": {
     "services_title": "Services",
     "links_title": "Liens rapides",
     "contact_title": "Coordonnées",
-    "regions_title": "Prêteur alternatif — Régions desservies",
+    "regions_title": "Prêteur alternatif — Régions desservies au Canada",
     "all_cities": "Toutes les villes →",
     "copyright": "Tous droits réservés.",
     "privacy": "Politique de confidentialité",

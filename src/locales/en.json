@@ -19,22 +19,22 @@
     }
   },
   "hero": {
-    "badge": "Alternative lender since 1998",
-    "title": "Short-Term Financing Solutions in Quebec",
-    "subtitle": "Fast loans secured by real estate. Financing approved in as little as 48 hours, regardless of your credit history.",
+    "badge": "Canadian alternative lender since 1998",
+    "title": "Alternative Financing Solutions Across Canada",
+    "subtitle": "Fast real-estate-secured loans approved in as little as 48 hours, regardless of your credit history or province.",
     "cta1": "Apply Online",
     "cta2": "Our Services"
   },
   "trust": {
     "1": { "title": "Approval in 48h", "desc": "Fast response guaranteed" },
-    "2": { "title": "Full confidentiality", "desc": "Your information is protected" },
+    "2": { "title": "Across Canada", "desc": "Service in all provinces" },
     "3": { "title": "Since 1998", "desc": "Over 25 years of experience" }
   },
   "footer": {
     "services_title": "Services",
     "links_title": "Quick Links",
     "contact_title": "Contact Information",
-    "regions_title": "Alternative Lender — Areas Served",
+    "regions_title": "Alternative Lender — Areas Served Across Canada",
     "all_cities": "All cities →",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",

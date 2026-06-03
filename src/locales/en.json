@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "home": "Home",
+    "profile": "Profile",
+    "services": "Services",
+    "calculator": "Calculator",
+    "faq": "FAQ",
+    "application": "Apply Online",
+    "contact": "Contact Us",
+    "cta": "Apply Now",
+    "services_items": {
+      "particuliers": "Services for Individuals",
+      "temporaire": "Bridge Financing",
+      "consolidation": "Debt Consolidation",
+      "credit": "2nd Chance Credit",
+      "entreprises": "Business Services",
+      "faillite": "Avoid Bankruptcy"
+    }
+  },
+  "hero": {
+    "badge": "Alternative lender since 1998",
+    "title": "Short-Term Financing Solutions in Quebec",
+    "subtitle": "Fast loans secured by real estate. Financing approved in as little as 48 hours, regardless of your credit history.",
+    "cta1": "Apply Online",
+    "cta2": "Our Services"
+  },
+  "trust": {
+    "1": { "title": "Approval in 48h", "desc": "Fast response guaranteed" },
+    "2": { "title": "Full confidentiality", "desc": "Your information is protected" },
+    "3": { "title": "Since 1998", "desc": "Over 25 years of experience" }
+  },
+  "footer": {
+    "services_title": "Services",
+    "links_title": "Quick Links",
+    "contact_title": "Contact Information",
+    "regions_title": "Alternative Lender — Areas Served",
+    "all_cities": "All cities →",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "legal": "Legal Notice",
+    "newsletter": {
+      "title": "Stay Informed",
+      "subtitle": "Receive our financial tips and latest offers.",
+      "placeholder": "your@email.com",
+      "subscribe": "Subscribe",
+      "success": "Successfully subscribed!",
+      "error": "An error occurred. Please try again.",
+      "toast": "Newsletter subscription successful!"
+    },
+    "services_list": {
+      "particuliers": "Financing for Individuals",
+      "entreprises": "Business Financing",
+      "temporaire": "Bridge Financing",
+      "consolidation": "Debt Consolidation",
+      "credit": "2nd Chance Credit",
+      "faillite": "Avoid Bankruptcy"
+    },
+    "links_list": {
+      "home": "Home",
+      "profile": "Company Profile",
+      "application": "Apply Online",
+      "contact": "Contact Us",
+      "calculator": "Loan Calculator",
+      "faq": "FAQ",
+      "regions": "Areas Served",
+      "legal": "Legal Notice"
+    }
+  },
+  "cookie": {
+    "title": "Your Privacy",
+    "text": "This site uses cookies to improve your browsing experience, analyze traffic and personalize content. By continuing to browse, you consent to the use of these cookies in accordance with",
+    "law": "Quebec Law 25",
+    "law_suffix": "on the protection of personal information.",
+    "accept": "Accept All",
+    "decline": "Refuse Non-Essential",
+    "close": "Close"
+  },
+  "contact_page": {
+    "coordinates": "Our Contact Information",
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "mobile_label": "Mobile",
+    "email_label": "Email",
+    "fax_label": "Fax",
+    "send_title": "Send Us a Message",
+    "success_title": "Message Sent!",
+    "success_msg": "We will get back to you as soon as possible.",
+    "send_another": "Send Another Message",
+    "form": {
+      "firstname": "First Name",
+      "firstname_ph": "Your first name",
+      "lastname": "Last Name",
+      "lastname_ph": "Your last name",
+      "email": "Email",
+      "phone": "Phone",
+      "phone_ph": "450 914-5709 (optional)",
+      "message": "Message",
+      "message_ph": "Your message...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "errors": {
+        "firstname": "First name is required.",
+        "lastname": "Last name is required.",
+        "email_required": "Email is required.",
+        "email_invalid": "Invalid email address.",
+        "phone_invalid": "Invalid phone format.",
+        "message": "Message is required."
+      }
+    }
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "home": "Back to Home",
+    "back": "Previous Page"
+  },
+  "lang": {
+    "fr": "Français",
+    "en": "English",
+    "toggle": "FR"
+  }
+}

@@ -28,13 +28,13 @@ export default function Accueil() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-1.5 md:gap-2 bg-accent-500/20 text-accent-300 px-3 md:px-4 py-1 md:py-1.5 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6">
               <Shield className="h-3.5 w-3.5 md:h-4 md:w-4" />
-              {c('accueil.hero.badge', 'Prêteur alternatif depuis 1998')}
+              {c('accueil.hero.badge', 'Prêteur alternatif canadien depuis 1998')}
             </div>
             <h1 className="font-serif text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
-              {c('accueil.hero.titre', 'La solution de financement temporaire à Québec')}
+              {c('accueil.hero.titre', 'La solution de financement alternatif partout au Canada')}
             </h1>
             <p className="text-base md:text-xl text-primary-100 mb-6 md:mb-8 leading-relaxed max-w-2xl">
-              {c('accueil.hero.soustitre', 'Prêts rapides à obtenir avec garanties immobilières. Financement approuvé en aussi peu que 48 heures, sans égard à votre dossier de crédit.')}
+              {c('accueil.hero.soustitre', 'Prêts rapides avec garanties immobilières approuvés en aussi peu que 48 heures, peu importe votre province ou votre dossier de crédit.')}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Link
@@ -73,8 +73,8 @@ export default function Accueil() {
                   <Shield className="h-7 w-7 text-primary-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-primary-700">{c('accueil.trust.2.titre', 'Confidentialité assurée')}</p>
-                  <p className="text-sm text-gray-500">{c('accueil.trust.2.desc', 'Vos informations sont protégées')}</p>
+                  <p className="font-bold text-primary-700">{c('accueil.trust.2.titre', 'Partout au Canada')}</p>
+                  <p className="text-sm text-gray-500">{c('accueil.trust.2.desc', 'Service dans toutes les provinces')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -100,7 +100,7 @@ export default function Accueil() {
                 {c('accueil.services.titre', 'Nos services de financement')}
               </h2>
               <p className="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto">
-                {c('accueil.services.soustitre', 'Des solutions de financement ajustées à vos besoins, avec garanties immobilières en 1er ou 2e rang.')}
+                {c('accueil.services.soustitre', 'Des solutions de financement ajustées à vos besoins partout au Canada, avec garanties immobilières en 1er ou 2e rang.')}
               </p>
             </div>
           </AnimateOnScroll>

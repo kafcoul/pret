@@ -87,7 +87,7 @@ export default function Footer() {
                             <img src="/logo.svg" alt={c('coord.nom.entreprise', 'Solutions Financement Fortier')} className="h-9 w-auto" />
                         </div>
                         <p className="text-primary-200 text-sm leading-relaxed hidden md:block">
-                            {c('footer.description', 'Prêteur alternatif à Québec depuis 1998. Prêts rapides avec garanties immobilières, approuvés en 48 heures.')}
+                            {c('footer.description', 'Prêteur alternatif canadien depuis 1998. Prêts rapides avec garanties immobilières, approuvés en 48 heures.')}
                         </p>
 
                     </div>
@@ -186,7 +186,7 @@ export default function Footer() {
                     <div className="flex items-center gap-4">
                         <Link to="/politique-confidentialite" className="hover:text-white transition-colors">{t('footer.privacy')}</Link>
                         <Link to="/mentions-legales" className="hover:text-white transition-colors">{t('footer.legal')}</Link>
-                        <span>{c('coord.slogan', 'Prêteur alternatif à Québec depuis 1998')}</span>
+                        <span>{c('coord.slogan', 'Prêteur alternatif canadien depuis 1998')}</span>
                     </div>
                 </div>
             </div>

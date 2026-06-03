@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "home": "Accueil",
+    "profile": "Profil",
+    "services": "Services",
+    "calculator": "Calculateur",
+    "faq": "FAQ",
+    "application": "Demande en ligne",
+    "contact": "Nous joindre",
+    "cta": "Faire une demande",
+    "services_items": {
+      "particuliers": "Services pour particuliers",
+      "temporaire": "Financement temporaire",
+      "consolidation": "Consolidation de dettes",
+      "credit": "2e chance au crédit",
+      "entreprises": "Services pour entreprises",
+      "faillite": "Éviter la faillite"
+    }
+  },
+  "hero": {
+    "badge": "Prêteur alternatif depuis 1998",
+    "title": "La solution de financement temporaire à Québec",
+    "subtitle": "Prêts rapides à obtenir avec garanties immobilières. Financement approuvé en aussi peu que 48 heures, sans égard à votre dossier de crédit.",
+    "cta1": "Faire une demande en ligne",
+    "cta2": "Nos services"
+  },
+  "trust": {
+    "1": { "title": "Approbation en 48h", "desc": "Réponse rapide garantie" },
+    "2": { "title": "Confidentialité assurée", "desc": "Vos informations sont protégées" },
+    "3": { "title": "Depuis 1998", "desc": "Plus de 25 ans d'expérience" }
+  },
+  "footer": {
+    "services_title": "Services",
+    "links_title": "Liens rapides",
+    "contact_title": "Coordonnées",
+    "regions_title": "Prêteur alternatif — Régions desservies",
+    "all_cities": "Toutes les villes →",
+    "copyright": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "legal": "Mentions légales",
+    "newsletter": {
+      "title": "Restez informé",
+      "subtitle": "Recevez nos conseils financiers et nouvelles offres.",
+      "placeholder": "votre@courriel.com",
+      "subscribe": "S'inscrire",
+      "success": "Inscription réussie !",
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "toast": "Inscription à l'infolettre réussie !"
+    },
+    "services_list": {
+      "particuliers": "Financement pour particuliers",
+      "entreprises": "Financement pour entreprises",
+      "temporaire": "Financement temporaire",
+      "consolidation": "Consolidation de dettes",
+      "credit": "2e chance au crédit",
+      "faillite": "Éviter la faillite"
+    },
+    "links_list": {
+      "home": "Accueil",
+      "profile": "Profil de l'entreprise",
+      "application": "Demande en ligne",
+      "contact": "Nous joindre",
+      "calculator": "Calculateur de prêt",
+      "faq": "FAQ",
+      "regions": "Régions desservies",
+      "legal": "Mentions légales"
+    }
+  },
+  "cookie": {
+    "title": "Respect de votre vie privée",
+    "text": "Ce site utilise des témoins (cookies) pour améliorer votre expérience de navigation, analyser le trafic et personnaliser le contenu. En poursuivant votre navigation, vous acceptez l'utilisation de ces témoins conformément à la",
+    "law": "Loi 25 du Québec",
+    "law_suffix": "sur la protection des renseignements personnels.",
+    "accept": "Tout accepter",
+    "decline": "Refuser les non essentiels",
+    "close": "Fermer"
+  },
+  "contact_page": {
+    "coordinates": "Nos coordonnées",
+    "address_label": "Adresse",
+    "phone_label": "Téléphone",
+    "mobile_label": "Cellulaire",
+    "email_label": "Courriel",
+    "fax_label": "Télécopieur",
+    "send_title": "Envoyez-nous un message",
+    "success_title": "Message envoyé !",
+    "success_msg": "Nous vous répondrons dans les plus brefs délais.",
+    "send_another": "Envoyer un autre message",
+    "form": {
+      "firstname": "Prénom",
+      "firstname_ph": "Votre prénom",
+      "lastname": "Nom",
+      "lastname_ph": "Votre nom de famille",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "phone_ph": "450 914-5709 (optionnel)",
+      "message": "Message",
+      "message_ph": "Votre message...",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours...",
+      "errors": {
+        "firstname": "Le prénom est requis.",
+        "lastname": "Le nom est requis.",
+        "email_required": "Le courriel est requis.",
+        "email_invalid": "Adresse courriel invalide.",
+        "phone_invalid": "Format de téléphone invalide.",
+        "message": "Le message est requis."
+      }
+    }
+  },
+  "notfound": {
+    "title": "Page introuvable",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil",
+    "back": "Page précédente"
+  },
+  "lang": {
+    "fr": "Français",
+    "en": "English",
+    "toggle": "EN"
+  }
+}

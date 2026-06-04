@@ -1,9 +1,10 @@
-import { useState, useRef } from 'react';
-import { supabase } from '../lib/supabaseClient';
-import { useToast } from '../components/ui/Toast';
-import { useSiteContent } from '../lib/SiteContentContext';
+import { useRef, useState } from "react";
+import { supabase } from "../lib/supabaseClient";
+import { useToast } from "../components/ui/Toast";
+import { useSiteContent } from "../lib/SiteContentContext";
+import { interpolateContent } from "../lib/siteContentDefaults";
 
-type FormStatus = 'idle' | 'loading' | 'success' | 'error';
+type FormStatus = "idle" | "loading" | "success" | "error";
 
 interface UseFormSubmitOptions<T extends { [K in keyof T]: string }> {
   /** Supabase Edge Function name to invoke */
@@ -31,18 +32,28 @@ export function useFormSubmit<T extends { [K in keyof T]: string }>({
   successMessage,
 }: UseFormSubmitOptions<T>) {
   const [form, setForm] = useState<T>(initialForm);
-  const [status, setStatus] = useState<FormStatus>('idle');
-  const [errorMsg, setErrorMsg] = useState('');
-  const [fieldErrors, setFieldErrors] = useState<Partial<Record<keyof T, string>>>({});
-  const [honeypot, setHoneypot] = useState('');
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [fieldErrors, setFieldErrors] = useState<
+    Partial<Record<keyof T, string>>
+  >({});
+  const [honeypot, setHoneypot] = useState("");
   const [lastSubmit, setLastSubmit] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
   const { c } = useSiteContent();
+  const serverErrorMessage = interpolateContent(
+    c("forms.submit.server_error"),
+    {
+      phone: c("coord.telephone1"),
+    },
+  );
 
   /** Generic onChange for <input>, <textarea>, and <select> */
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -60,8 +71,8 @@ export function useFormSubmit<T extends { [K in keyof T]: string }>({
 
     // Client‑side rate limit (30 s)
     if (Date.now() - lastSubmit < 30_000) {
-      setErrorMsg('Veuillez patienter avant de soumettre à nouveau.');
-      setStatus('error');
+      setErrorMsg("Veuillez patienter avant de soumettre à nouveau.");
+      setStatus("error");
       return;
     }
 
@@ -70,8 +81,8 @@ export function useFormSubmit<T extends { [K in keyof T]: string }>({
     setFieldErrors(errors);
     if (Object.keys(errors).length > 0) return;
 
-    setStatus('loading');
-    setErrorMsg('');
+    setStatus("loading");
+    setErrorMsg("");
 
     try {
       const { error } = await supabase.functions.invoke(functionName, {
@@ -80,44 +91,48 @@ export function useFormSubmit<T extends { [K in keyof T]: string }>({
 
       if (error) throw error;
 
-      setStatus('success');
+      setStatus("success");
       setLastSubmit(Date.now());
-      toast(successMessage, 'success');
+      toast(successMessage, "success");
       setForm(initialForm);
       setFieldErrors({});
-      scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
+      scrollRef.current?.scrollIntoView({ behavior: "smooth" });
     } catch (err: unknown) {
-      setStatus('error');
-      let msg = 'Une erreur est survenue. Veuillez réessayer.';
+      setStatus("error");
+      let msg = "Une erreur est survenue. Veuillez réessayer.";
 
-      if (err && typeof err === 'object' && 'name' in err) {
+      if (err && typeof err === "object" && "name" in err) {
         const name = (err as { name: string }).name;
-        if (name === 'FunctionsFetchError') {
+        if (name === "FunctionsFetchError") {
           msg =
-            'Impossible de joindre le serveur. Vérifiez votre connexion Internet et réessayez.';
-        } else if (name === 'FunctionsHttpError') {
+            "Impossible de joindre le serveur. Vérifiez votre connexion Internet et réessayez.";
+        } else if (name === "FunctionsHttpError") {
           // Essayer d'extraire le message d'erreur précis du serveur
           try {
             const context = (err as { context?: Response }).context;
             if (context) {
               const status = context.status;
               const data = await context.clone().json() as { error?: string };
-              if (status === 429 || data?.error?.toLowerCase().includes('requêtes')) {
-                msg = 'Vous avez envoyé trop de messages récemment. Veuillez patienter quelques minutes avant de réessayer.';
+              if (
+                status === 429 ||
+                data?.error?.toLowerCase().includes("requêtes")
+              ) {
+                msg =
+                  "Vous avez envoyé trop de messages récemment. Veuillez patienter quelques minutes avant de réessayer.";
               } else if (data?.error) {
                 msg = data.error;
               } else {
-                msg = `Le serveur a rencontré une erreur. Veuillez réessayer plus tard ou nous appeler au ${c('coord.telephone1', '450 914-5709')}.`;
+                msg = serverErrorMessage;
               }
             } else {
-              msg = `Le serveur a rencontré une erreur. Veuillez réessayer plus tard ou nous appeler au ${c('coord.telephone1', '450 914-5709')}.`;
+              msg = serverErrorMessage;
             }
           } catch {
-            msg = `Le serveur a rencontré une erreur. Veuillez réessayer plus tard ou nous appeler au ${c('coord.telephone1', '450 914-5709')}.`;
+            msg = serverErrorMessage;
           }
-        } else if (name === 'FunctionsRelayError') {
+        } else if (name === "FunctionsRelayError") {
           msg =
-            'Le service est temporairement indisponible. Veuillez réessayer dans quelques instants.';
+            "Le service est temporairement indisponible. Veuillez réessayer dans quelques instants.";
         }
       }
 

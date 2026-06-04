@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- Fond principal bleu marine -->
+  <rect width="1200" height="630" fill="#0F2B4C"/>
+  <!-- Motif subtil de grille -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="none" stroke="#1A3A5C" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.3"/>
+  <!-- Bande dorée en bas -->
+  <rect x="0" y="590" width="1200" height="40" fill="#C8963E"/>
+  <!-- Ligne dorée accent en haut -->
+  <rect x="0" y="0" width="1200" height="4" fill="#C8963E"/>
+  <!-- Bouclier grand format -->
+  <g transform="translate(100, 140)">
+    <path d="M70 0C70 0 105 8 140 8C140 8 140 60 140 76C140 110 70 142 70 142C70 142 0 110 0 76C0 60 0 8 0 8C35 8 70 0 70 0Z" fill="#0F2B4C" stroke="#C8963E" stroke-width="3"/>
+    <!-- Maison -->
+    <path d="M70 30L40 56H48V80H62V66H78V80H92V56H100L70 30Z" fill="#C8963E"/>
+    <!-- Clé -->
+    <circle cx="70" cy="72" r="6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="75" y1="72" x2="92" y2="72" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="85" y1="72" x2="85" y2="78" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="90" y1="72" x2="90" y2="77" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Liseré sous bouclier -->
+    <rect x="20" y="120" width="100" height="2" rx="1" fill="#C8963E" opacity="0.5"/>
+  </g>
+  <!-- Texte principal -->
+  <text x="310" y="230" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="56" fill="white" letter-spacing="0.5">Solutions Financement</text>
+  <text x="310" y="295" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="64" fill="#C8963E" letter-spacing="3">FORTIER</text>
+  <!-- Ligne séparatrice -->
+  <rect x="310" y="310" width="200" height="2" rx="1" fill="#C8963E" opacity="0.5"/>
+  <!-- Sous-titre -->
+  <text x="310" y="345" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#94A3B8" letter-spacing="1">Prêteur alternatif à Québec depuis 1998</text>
+  <!-- Points forts -->
+  <text x="310" y="400" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#C8963E">✦</text>
+  <text x="335" y="400" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#CBD5E1">Prêts rapides avec garanties immobilières</text>
+  <text x="310" y="435" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#C8963E">✦</text>
+  <text x="335" y="435" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#CBD5E1">Approuvés en 48 heures</text>
+  <text x="310" y="470" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#C8963E">✦</text>
+  <text x="335" y="470" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#CBD5E1">Particuliers et entreprises</text>
+  <!-- Contact en bas -->
+  <text x="600" y="560" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#64748B">450 914-5709  ·  solutionsfinancementfortier.com</text>
+</svg>

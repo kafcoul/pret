@@ -1,0 +1,52 @@
+# https://www.robotstxt.org/robotstxt.html
+# Solutions Financement Fortier — robots.txt
+
+# All search engines
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://www.solutionsfortier.com/sitemap.xml
+
+# Preferred host (www)
+Host: https://www.solutionsfortier.com
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /og-image.png
+Allow: /logo.svg
+Allow: /icon-192.png
+Allow: /icon-512.png
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Crawl-delay: 1
+
+# Social Media Crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block unwanted bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /

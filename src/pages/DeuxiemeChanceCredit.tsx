@@ -21,7 +21,7 @@ export default function DeuxiemeChanceCredit() {
           <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-xl mb-10">
             <p className="text-primary-700 font-medium">
               Faites une demande de financement en ligne pour une 2e chance au crédit — nous évaluons
-              votre dossier rapidement et confidentiellement, partout au Canada, sans frais d'analyse.
+              votre dossier rapidement et confidentiellement, sans frais d'analyse.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export default function DeuxiemeChanceCredit() {
             {c('deuxieme.retablir.titre', 'Rétablissez votre crédit')}
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            {c('deuxieme.retablir.p1', 'Faillite antérieure, proposition de consommateur, cote de crédit insuffisante ? Les banques traditionnelles vous ont fermé leurs portes — mais Solutions Financement Fortier peut vous offrir une deuxième chance, partout au Canada. Nous travaillons avec des Canadiens de toutes les provinces, peu importe leur profil financier.')}
+            {c('deuxieme.retablir.p1', 'Faillite antérieure, proposition de consommateur, cote de crédit insuffisante ? Les banques traditionnelles vous ont fermé leurs portes — mais Solutions Financement Fortier peut vous offrir une deuxième chance. Peu importe votre profil financier, nous évaluons votre dossier en fonction de l\'équité de votre propriété.')}
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Notre approche est entièrement basée sur la <strong>valeur de l'équité</strong> que vous
@@ -82,7 +82,7 @@ export default function DeuxiemeChanceCredit() {
 
       <CTABanner
         title={c('deuxieme.cta.titre', 'Prêt pour une 2e chance au crédit ?')}
-        subtitle={c('deuxieme.cta.soustitre', 'Faites le premier pas vers votre rétablissement financier — un spécialiste vous contacte dans les 48 heures, partout au Canada, sans engagement.')}
+        subtitle={c('deuxieme.cta.soustitre', 'Faites le premier pas vers votre rétablissement financier — un spécialiste vous contacte dans les 48 heures, sans engagement.')}
         buttonText={c('deuxieme.cta.bouton', 'Demande de 2e chance au crédit')}
       />
     </>

@@ -26,7 +26,7 @@ export default function ServicesParticuliers() {
     <>
       <PageHero
         title={c('particuliers.hero.titre', 'Services financiers pour particuliers')}
-        subtitle={c('particuliers.hero.soustitre', 'Prêts alternatifs avec garantie immobilière pour particuliers partout au Canada — refusé par votre banque ? Nous avons la solution.')}
+        subtitle={c('particuliers.hero.soustitre', 'Refusé par votre banque ? Prêts alternatifs garantis par votre propriété — nous aidons les particuliers d\'un bout à l\'autre du pays, peu importe votre dossier de crédit.')}
         breadcrumb={[{ label: 'Services pour particuliers' }]}
       />
 
@@ -83,7 +83,7 @@ export default function ServicesParticuliers() {
 
       <CTABanner
         title={c('particuliers.cta.titre', 'Faites une demande de financement en ligne')}
-        subtitle="Un spécialiste vous contacte dans les 48 heures — sans frais, sans engagement, partout au Canada."
+        subtitle="Un spécialiste vous contacte dans les 48 heures — sans frais, sans engagement."
         buttonText={c('particuliers.cta.bouton', 'Demande de financement pour particuliers')}
       />
     </>

@@ -34,7 +34,7 @@ export default function Accueil() {
               {c('accueil.hero.titre', 'La solution de financement alternatif partout au Canada')}
             </h1>
             <p className="text-base md:text-xl text-primary-100 mb-6 md:mb-8 leading-relaxed max-w-2xl">
-              {c('accueil.hero.soustitre', 'Prêts rapides avec garanties immobilières approuvés en aussi peu que 48 heures, peu importe votre province ou votre dossier de crédit.')}
+              {c('accueil.hero.soustitre', 'Financement approuvé en aussi peu que 48 heures, garanti par vos actifs immobiliers. Peu importe votre province, votre situation d\'emploi ou votre dossier de crédit — nous trouvons une solution.')}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Link
@@ -109,7 +109,7 @@ export default function Accueil() {
               <ServiceCard
                 icon={Users}
                 title={c('accueil.carte.1.titre', 'Particuliers')}
-                description={c('accueil.carte.1.desc', 'Financement adapté aux besoins des particuliers, même avec un dossier de crédit difficile.')}
+                description={c('accueil.carte.1.desc', 'Solutions sur mesure pour les particuliers partout au Canada — peu importe votre historique de crédit ou votre situation financière.')}
                 items={c('accueil.carte.1.items', 'Prêt rénovation\nAchat immobilier\nRefinancement\nConsolidation de dettes\nLettre de caution').split('\n').filter(Boolean)}
                 link="/services/particuliers"
               />
@@ -118,7 +118,7 @@ export default function Accueil() {
               <ServiceCard
                 icon={Building2}
                 title={c('accueil.carte.2.titre', 'Entreprises')}
-                description={c('accueil.carte.2.desc', 'Solutions de financement pour les entreprises et les projets commerciaux.')}
+                description={c('accueil.carte.2.desc', 'Accélérez vos projets commerciaux avec un financement rapide et flexible, garanti par vos actifs immobiliers d\'entreprise.')}
                 items={c("accueil.carte.2.items", "Prêt fonds de roulement\nPrêt équipements\nAffacturage\nAcquisition d'immobilisations\nLettre de garantie").split('\n').filter(Boolean)}
                 link="/services/entreprises"
               />
@@ -127,7 +127,7 @@ export default function Accueil() {
               <ServiceCard
                 icon={HardHat}
                 title={c('accueil.carte.3.titre', 'Construction')}
-                description={c('accueil.carte.3.desc', 'Financement spécialisé pour les projets de construction et les contracteurs.')}
+                description={c('accueil.carte.3.desc', 'Financement de construction adapté aux promoteurs et contracteurs canadiens — du terrain au bâtiment livré.')}
                 items={c("accueil.carte.3.items", "Achat de terrain\nBridge de construction\nFinancement d'infrastructure\nAccommodation pour clients acheteurs\nCautionnement permis").split('\n').filter(Boolean)}
                 link="/services/entreprises"
               />
@@ -152,7 +152,7 @@ export default function Accueil() {
                   {c('accueil.courtiers.titre', 'Courtiers hypothécaires')}
                 </h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  {c('accueil.courtiers.desc', 'Vous êtes courtier hypothécaire ? Joignez-vous à notre réseau de collaborateurs indépendants. Nous offrons des conditions avantageuses et un service rapide pour vos clients.')}
+                  {c('accueil.courtiers.desc', 'Vous êtes courtier hypothécaire au Canada ? Joignez notre réseau de partenaires indépendants. Commissions compétitives, dossiers traités en 48 heures et service professionnel pour vos clients les plus complexes.')}
                 </p>
                 <Link
                   to="/nous-joindre"
@@ -181,8 +181,8 @@ export default function Accueil() {
 
       {/* CTA */}
       <CTABanner
-        title={c('accueil.cta.titre', 'Des solutions de financement ajustées à vos besoins')}
-        subtitle={c('accueil.cta.soustitre', 'Remplissez notre formulaire en ligne et un spécialiste vous contactera rapidement.')}
+        title={c('accueil.cta.titre', 'Votre financement, partout au Canada, en 48 heures')}
+        subtitle={c('accueil.cta.soustitre', 'Remplissez notre formulaire en ligne — un spécialiste vous contacte rapidement, sans engagement.')}
       />
     </>
   );

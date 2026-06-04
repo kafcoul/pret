@@ -55,7 +55,7 @@ export default function VillesIndex() {
             <PageHero
                 title={c('regions.hero.titre')}
                 subtitle={c('regions.hero.soustitre')}
-                breadcrumb={[{ label: 'Régions' }]}
+                breadcrumb={[{ label: c('breadcrumb.regions', 'Régions') }]}
             />
 
             <section className="py-12 md:py-16">

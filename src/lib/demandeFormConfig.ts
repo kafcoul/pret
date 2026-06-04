@@ -146,7 +146,7 @@ export const defaultDemandeFormConfig: DemandeFormConfig = {
       title: "Propriété offerte en garantie",
       subtitle: "Informations sur le bien immobilier",
       notice:
-        "Avec garanties immobilières seulement. La propriété doit être située au Québec et avoir une équité suffisante pour garantir le prêt.",
+        "Avec garanties immobilières seulement. Nous acceptons des propriétés situées partout au Canada. La propriété doit avoir une équité suffisante pour garantir le prêt.",
     },
     review: {
       title: "Révision de votre demande",
@@ -159,7 +159,7 @@ export const defaultDemandeFormConfig: DemandeFormConfig = {
     telephone: { label: "Téléphone", placeholder: "450 000-0000" },
     courriel: { label: "Courriel", placeholder: "votre@courriel.com" },
     adresse: { label: "Adresse", placeholder: "123, rue Exemple" },
-    ville: { label: "Ville", placeholder: "Québec, Lévis, Beauport..." },
+    ville: { label: "Ville", placeholder: "Toronto, Montréal, Vancouver..." },
     codePostal: { label: "Code postal", placeholder: "G1A 1A1" },
     typeFinancement: {
       label: "Type de financement",

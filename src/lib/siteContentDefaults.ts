@@ -224,6 +224,29 @@ export const SITE_CONTENT_DEFAULTS: Record<string, string> = {
   "profil.pourquoi.4": "Financement basé sur l'équité, pas le crédit",
   "profil.pourquoi.5": "Solutions personnalisées pour chaque situation",
 
+  // ServicesEntreprises
+  "entreprises.bandeau": "Faites une demande de financement alternatif en ligne pour votre entreprise — un spécialiste vous contactera rapidement.",
+  "entreprises.intro.p2": "Nous collaborons avec des courtiers hypothécaires partout au Canada pour offrir à nos clients les meilleures solutions possibles.",
+  "breadcrumb.services.entreprises": "Services pour entreprises",
+  "entreprises.usages.titre": "Utilisations courantes",
+  "entreprises.usage.1": "Traverser une période financière difficile",
+  "entreprises.usage.2": "Saisir une opportunité d'affaires rapidement",
+  "entreprises.usage.3": "Acquérir de l'équipement ou de la machinerie",
+  "entreprises.usage.4": "Financer l'acquisition d'un concurrent",
+  "entreprises.usage.5": "Augmenter le fonds de roulement",
+  "entreprises.usage.6": "Financer un projet de construction commerciale",
+  "entreprises.usage.7": "Acheter un terrain pour développement",
+  "entreprises.usage.8": "Obtenir une lettre de garantie ou cautionnement",
+  "entreprises.produits.titre": "Nos produits pour entreprises",
+  "entreprises.produit.1": "Prêt fonds de roulement",
+  "entreprises.produit.2": "Prêt pour équipements et machinerie",
+  "entreprises.produit.3": "Affacturage",
+  "entreprises.produit.4": "Acquisition d'immobilisations",
+  "entreprises.produit.5": "Lettre de garantie et cautionnement",
+
+  // ConsolidationDettes breadcrumb
+  "breadcrumb.consolidation": "Consolidation de dettes",
+
   // Breadcrumbs
   "breadcrumb.services.particuliers": "Services pour particuliers",
   "breadcrumb.eviter.faillite": "Éviter la faillite",
@@ -615,6 +638,29 @@ export const SITE_CONTENT_DEFAULTS_EN: Record<string, string> = {
   "profil.pourquoi.3.en": "Full confidentiality of your information",
   "profil.pourquoi.4.en": "Financing based on equity, not credit",
   "profil.pourquoi.5.en": "Personalized solutions for every situation",
+
+  // ServicesEntreprises
+  "entreprises.bandeau.en": "Apply for alternative business financing online — a specialist will contact you promptly.",
+  "entreprises.intro.p2.en": "We work with mortgage brokers across Canada to offer our clients the best possible solutions.",
+  "entreprises.usages.titre.en": "Common Uses",
+  "entreprises.usage.1.en": "Navigate a difficult financial period",
+  "entreprises.usage.2.en": "Seize a business opportunity quickly",
+  "entreprises.usage.3.en": "Acquire equipment or machinery",
+  "entreprises.usage.4.en": "Finance a competitor acquisition",
+  "entreprises.usage.5.en": "Increase working capital",
+  "entreprises.usage.6.en": "Finance a commercial construction project",
+  "entreprises.usage.7.en": "Purchase land for development",
+  "entreprises.usage.8.en": "Obtain a letter of guarantee or bond",
+  "entreprises.produits.titre.en": "Our Products for Businesses",
+  "entreprises.produit.1.en": "Working Capital Loan",
+  "entreprises.produit.2.en": "Equipment & Machinery Loan",
+  "entreprises.produit.3.en": "Factoring",
+  "entreprises.produit.4.en": "Asset Acquisition",
+  "entreprises.produit.5.en": "Letter of Guarantee & Bonding",
+
+  // ConsolidationDettes breadcrumb
+  "breadcrumb.consolidation.en": "Debt Consolidation",
+  "breadcrumb.services.entreprises.en": "Services for Businesses",
 
   // Breadcrumbs
   "breadcrumb.services.particuliers.en": "Services for Individuals",

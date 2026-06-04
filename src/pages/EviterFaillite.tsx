@@ -11,7 +11,7 @@ export default function EviterFaillite() {
     <>
       <PageHero
         title={c('faillite.hero.titre', 'Éviter la faillite')}
-        subtitle={c('faillite.hero.soustitre', 'Des alternatives existent partout au Canada — si vous détenez de l\'équité immobilière, un prêt temporaire peut vous éviter la faillite et protéger votre avenir financier.')}
+        subtitle={c('faillite.hero.soustitre', 'Si vous détenez de l\'équité dans votre propriété, un prêt temporaire peut vous éviter la faillite — nous vous aidons à trouver une sortie avant qu\'il ne soit trop tard.')}
         breadcrumb={[{ label: 'Éviter la faillite' }]}
       />
 
@@ -116,7 +116,7 @@ export default function EviterFaillite() {
 
       <CTABanner
         title={c('faillite.cta.titre', "N'attendez pas qu'il soit trop tard")}
-        subtitle={c('faillite.cta.soustitre', 'Contactez-nous dès maintenant pour une consultation gratuite et confidentielle — partout au Canada, nous trouvons une solution avant que la situation empire.')}
+        subtitle={c('faillite.cta.soustitre', 'Contactez-nous dès maintenant pour une consultation gratuite et confidentielle — nous travaillons avec vous pour trouver une issue avant que la situation empire.')}
         buttonText={c('faillite.cta.bouton', "Demande d'aide pour éviter la faillite")}
       />
     </>

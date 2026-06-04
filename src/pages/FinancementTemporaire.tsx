@@ -9,7 +9,7 @@ export default function FinancementTemporaire() {
     <>
       <PageHero
         title={c('temporaire.hero.titre', 'Financement et refinancement temporaire')}
-        subtitle={c('temporaire.hero.soustitre', 'Solutions de prêt relais rapides et flexibles pour particuliers et entreprises — approuvées en 48 heures, partout au Canada.')}
+        subtitle={c('temporaire.hero.soustitre', 'Prêts relais à court terme pour ceux que les banques ont refusés — approbation en 48 heures, garantis par l\'équité de votre propriété.')}
         breadcrumb={[
           { label: 'Services', path: '/services/particuliers' },
           { label: 'Financement temporaire' },
@@ -21,7 +21,7 @@ export default function FinancementTemporaire() {
           <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-xl mb-10">
             <p className="text-primary-700 font-medium">
               Refusé par votre banque ? Besoin de liquidités rapidement ? Faites une demande en ligne
-              — un spécialiste vous contacte dans les 48 heures, partout au Canada, sans engagement.
+              — un spécialiste évalue votre dossier dans les 48 heures, sans frais ni engagement.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export default function FinancementTemporaire() {
 
       <CTABanner
         title={c('temporaire.cta.titre', 'Besoin de financement temporaire ?')}
-        subtitle={c('temporaire.cta.soustitre', 'Remplissez notre formulaire en ligne pour une évaluation rapide et confidentielle — un spécialiste vous répond dans les 48 heures, partout au Canada.')}
+        subtitle={c('temporaire.cta.soustitre', 'Remplissez notre formulaire en ligne pour une évaluation rapide et confidentielle — un spécialiste vous répond dans les 48 heures.')}
         buttonText={c('temporaire.cta.bouton', 'Demande de financement temporaire')}
       />
     </>

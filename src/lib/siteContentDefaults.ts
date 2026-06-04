@@ -247,7 +247,17 @@ export const SITE_CONTENT_DEFAULTS: Record<string, string> = {
   // ConsolidationDettes breadcrumb
   "breadcrumb.consolidation": "Consolidation de dettes",
 
+  // PolitiqueConfidentialite
+  "politique.hero.titre": "Politique de confidentialité",
+  "politique.hero.soustitre": "Protection de vos renseignements personnels",
+
   // Breadcrumbs
+  "breadcrumb.faq": "FAQ",
+  "breadcrumb.calculateur": "Calculateur",
+  "breadcrumb.nous.joindre": "Nous joindre",
+  "breadcrumb.demande": "Demande en ligne",
+  "breadcrumb.politique": "Politique de confidentialité",
+  "breadcrumb.regions": "Régions",
   "breadcrumb.services.particuliers": "Services pour particuliers",
   "breadcrumb.eviter.faillite": "Éviter la faillite",
   "breadcrumb.services": "Services",
@@ -662,7 +672,17 @@ export const SITE_CONTENT_DEFAULTS_EN: Record<string, string> = {
   "breadcrumb.consolidation.en": "Debt Consolidation",
   "breadcrumb.services.entreprises.en": "Services for Businesses",
 
+  // PolitiqueConfidentialite
+  "politique.hero.titre.en": "Privacy Policy",
+  "politique.hero.soustitre.en": "Protection of your personal information",
+
   // Breadcrumbs
+  "breadcrumb.faq.en": "FAQ",
+  "breadcrumb.calculateur.en": "Calculator",
+  "breadcrumb.nous.joindre.en": "Contact Us",
+  "breadcrumb.demande.en": "Online Application",
+  "breadcrumb.politique.en": "Privacy Policy",
+  "breadcrumb.regions.en": "Regions",
   "breadcrumb.services.particuliers.en": "Services for Individuals",
   "breadcrumb.eviter.faillite.en": "Avoid Bankruptcy",
   "breadcrumb.services.en": "Services",

@@ -27,7 +27,7 @@ export default function ServicesParticuliers() {
       <PageHero
         title={c('particuliers.hero.titre', 'Services financiers pour particuliers')}
         subtitle={c('particuliers.hero.soustitre', 'Refusé par votre banque ? Prêts alternatifs garantis par votre propriété — nous aidons les particuliers d\'un bout à l\'autre du pays, peu importe votre dossier de crédit.')}
-        breadcrumb={[{ label: 'Services pour particuliers' }]}
+        breadcrumb={[{ label: c('breadcrumb.services.particuliers', 'Services pour particuliers') }]}
       />
 
       {/* Intro */}
@@ -59,7 +59,7 @@ export default function ServicesParticuliers() {
                 <h3 className="font-serif font-bold text-lg text-primary-700 mb-2">{service.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">{service.description}</p>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-accent-500 group-hover:text-accent-600 transition-colors">
-                  En savoir plus <ArrowRight className="h-4 w-4" />
+                  {c('particuliers.service.lien', 'En savoir plus')} <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
             ))}
@@ -67,13 +67,13 @@ export default function ServicesParticuliers() {
 
           {/* Objectif */}
           <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 md:p-10 mb-12">
-            <h2 className="font-serif text-2xl font-bold text-primary-700 mb-4">Notre objectif</h2>
+            <h2 className="font-serif text-2xl font-bold text-primary-700 mb-4">{c('particuliers.objectif.titre', 'Notre objectif')}</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               {c('particuliers.objectif.texte', "Notre objectif est simple : vous redonner accès au financement dont vous avez besoin, peu importe où vous vivez au Canada. Conditions flexibles, versements adaptés à votre capacité, et un traitement rapide et confidentiel.")}
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Les demandes de prêt sont généralement <strong>approuvées en 48 heures</strong>.
-              Toutes les informations transmises demeurent strictement <strong>confidentielles</strong>.
+              {c('particuliers.objectif.p2a', 'Les demandes de prêt sont généralement')} <strong>{c('particuliers.objectif.p2b', 'approuvées en 48 heures')}</strong>.{' '}
+              {c('particuliers.objectif.p2c', 'Toutes les informations transmises demeurent strictement')} <strong>{c('particuliers.objectif.p2d', 'confidentielles')}</strong>.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function ServicesParticuliers() {
 
       <CTABanner
         title={c('particuliers.cta.titre', 'Faites une demande de financement en ligne')}
-        subtitle="Un spécialiste vous contacte dans les 48 heures — sans frais, sans engagement."
+        subtitle={c('particuliers.cta.soustitre', 'Un spécialiste vous contacte dans les 48 heures — sans frais, sans engagement.')}
         buttonText={c('particuliers.cta.bouton', 'Demande de financement pour particuliers')}
       />
     </>

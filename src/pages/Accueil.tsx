@@ -26,30 +26,38 @@ export default function Accueil() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-14 md:py-32">
           <div className="w-full">
-            <div className="inline-flex items-center gap-1.5 md:gap-2 bg-accent-500/20 text-accent-300 px-3 md:px-4 py-1 md:py-1.5 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6">
-              <Shield className="h-3.5 w-3.5 md:h-4 md:w-4" />
-              {c('accueil.hero.badge', 'Prêteur alternatif canadien depuis 1998')}
-            </div>
-            <h1 className="font-serif text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
-              {c('accueil.hero.titre', 'Quand votre banque dit non, nous trouvons une solution')}
-            </h1>
-            <p className="text-base md:text-xl text-primary-100 mb-6 md:mb-8 leading-relaxed max-w-3xl">
-              {c('accueil.hero.soustitre', 'Financement approuvé en aussi peu que 48 heures, garanti par vos actifs immobiliers. Peu importe votre province, votre situation d\'emploi ou votre dossier de crédit — nous trouvons une solution.')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-              <Link
-                to="/demande-en-ligne"
-                className="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all hover:scale-105"
-              >
-                {c('accueil.hero.cta1', 'Faire une demande en ligne')}
-              </Link>
-              <Link
-                to="/services/particuliers"
-                className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all"
-              >
-                {t('hero.cta2')}
-              </Link>
-            </div>
+            <AnimateOnScroll animation="fade-up" delay={0} duration={500}>
+              <div className="inline-flex items-center gap-1.5 md:gap-2 bg-accent-500/20 text-accent-300 px-3 md:px-4 py-1 md:py-1.5 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6">
+                <Shield className="h-3.5 w-3.5 md:h-4 md:w-4" />
+                {c('accueil.hero.badge', 'Prêteur alternatif canadien depuis 1998')}
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll animation="fade-up" delay={150} duration={600}>
+              <h1 className="font-serif text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                {c('accueil.hero.titre', 'Quand votre banque dit non, nous trouvons une solution')}
+              </h1>
+            </AnimateOnScroll>
+            <AnimateOnScroll animation="fade-up" delay={300} duration={600}>
+              <p className="text-base md:text-xl text-primary-100 mb-6 md:mb-8 leading-relaxed max-w-3xl">
+                {c('accueil.hero.soustitre', 'Financement approuvé en aussi peu que 48 heures, garanti par vos actifs immobiliers. Peu importe votre province, votre situation d\'emploi ou votre dossier de crédit — nous trouvons une solution.')}
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll animation="fade-up" delay={450} duration={600}>
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+                <Link
+                  to="/demande-en-ligne"
+                  className="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all hover:scale-105"
+                >
+                  {c('accueil.hero.cta1', 'Faire une demande en ligne')}
+                </Link>
+                <Link
+                  to="/services/particuliers"
+                  className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all"
+                >
+                  {t('hero.cta2')}
+                </Link>
+              </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>

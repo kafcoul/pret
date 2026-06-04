@@ -9,7 +9,7 @@ export default function Profil() {
       <PageHero
         title={c('profil.hero.titre', "Profil de l'entreprise")}
         subtitle={c('profil.hero.soustitre', "Prêteur alternatif de confiance fondé en 1998 — plus de 25 ans au service des particuliers et des entreprises à travers le pays")}
-        breadcrumb={[{ label: 'Profil' }]}
+        breadcrumb={[{ label: c('breadcrumb.profil', 'Profil') }]}
       />
 
       <section className="py-16 md:py-20">
@@ -50,27 +50,27 @@ export default function Profil() {
               </div>
             </div>
 
-            <h2 className="font-serif text-2xl font-bold text-primary-700 mb-4">Pourquoi nous choisir ?</h2>
+            <h2 className="font-serif text-2xl font-bold text-primary-700 mb-4">{c('profil.pourquoi.titre', 'Pourquoi nous choisir ?')}</h2>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="text-accent-500 font-bold text-xl leading-none mt-0.5">✓</span>
-                <span>Plus de 25 ans d'expérience en financement alternatif</span>
+                <span>{c('profil.pourquoi.1', "Plus de 25 ans d'expérience en financement alternatif")}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-500 font-bold text-xl leading-none mt-0.5">✓</span>
-                <span>Approbation en aussi peu que 48 heures</span>
+                <span>{c('profil.pourquoi.2', 'Approbation en aussi peu que 48 heures')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-500 font-bold text-xl leading-none mt-0.5">✓</span>
-                <span>Confidentialité totale de vos informations</span>
+                <span>{c('profil.pourquoi.3', 'Confidentialité totale de vos informations')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-500 font-bold text-xl leading-none mt-0.5">✓</span>
-                <span>Financement basé sur l'équité, pas le crédit</span>
+                <span>{c('profil.pourquoi.4', "Financement basé sur l'équité, pas le crédit")}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-500 font-bold text-xl leading-none mt-0.5">✓</span>
-                <span>Solutions personnalisées pour chaque situation</span>
+                <span>{c('profil.pourquoi.5', 'Solutions personnalisées pour chaque situation')}</span>
               </li>
             </ul>
           </div>

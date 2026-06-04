@@ -8,7 +8,7 @@ export default function Profil() {
     <>
       <PageHero
         title={c('profil.hero.titre', "Profil de l'entreprise")}
-        subtitle={c('profil.hero.soustitre', "Prêteur alternatif canadien de confiance depuis 1998 — au service des particuliers et des entreprises partout au Canada")}
+        subtitle={c('profil.hero.soustitre', "Prêteur alternatif de confiance fondé en 1998 — plus de 25 ans au service des particuliers et des entreprises à travers le pays")}
         breadcrumb={[{ label: 'Profil' }]}
       />
 

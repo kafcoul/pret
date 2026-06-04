@@ -121,8 +121,15 @@ export function SiteContentProvider({ children }: { children: ReactNode }) {
     }, [load]);
 
     const c = useCallback(
-        (key: string, fallback?: string): string => contentMap.get(key) ?? getSiteContentDefault(key, fallback ?? ''),
-        [contentMap]
+        (key: string, fallback?: string): string => {
+            if (lang === 'en') {
+                const enKey = `${key}.en`;
+                const enValue = contentMap.get(enKey) ?? getSiteContentDefault(enKey, '');
+                if (enValue) return enValue;
+            }
+            return contentMap.get(key) ?? getSiteContentDefault(key, fallback ?? '');
+        },
+        [contentMap, lang]
     );
 
     return (

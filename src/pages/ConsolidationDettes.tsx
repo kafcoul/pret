@@ -21,7 +21,7 @@ export default function ConsolidationDettes() {
         <div className="mx-auto max-w-4xl px-4">
           <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-xl mb-10">
             <p className="text-primary-700 font-medium">
-              {c('consolidation.intro.bandeau', "Faites une demande en ligne pour consolider vos dettes — un spécialiste en financement vous contacte dans les 48 heures, partout au Canada, sans frais ni engagement.")}
+              {c('consolidation.intro.bandeau', "Faites une demande en ligne pour consolider vos dettes — un spécialiste en financement vous contacte dans les 48 heures, sans frais ni engagement.")}
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export default function ConsolidationDettes() {
 
       <CTABanner
         title={c('consolidation.cta.titre', 'Besoin de consolider vos dettes ?')}
-        subtitle={c('consolidation.cta.soustitre', "Nous aidons les Canadiens de toutes les provinces à regrouper leurs dettes et à retrouver la tranquillité d'esprit — peu importe leur dossier de crédit.")}
+        subtitle={c('consolidation.cta.soustitre', "Peu importe votre historique de crédit, nous regroupons vos dettes en un seul paiement adapté à votre capacité — et vous aidons à reprendre le contrôle.")}
         buttonText={c('consolidation.cta.bouton', 'Demande de consolidation de dettes')}
       />
     </>

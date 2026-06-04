@@ -169,6 +169,68 @@ export const SITE_CONTENT_DEFAULTS: Record<string, string> = {
   "city.cta.titre_template": "Besoin de financement à {city} ?",
   "city.cta.soustitre":
     "Remplissez notre formulaire en ligne et recevez une réponse en 48 heures.",
+
+  // ServicesParticuliers
+  "particuliers.service.lien": "En savoir plus",
+  "particuliers.objectif.titre": "Notre objectif",
+  "particuliers.objectif.p2a": "Les demandes de prêt sont généralement",
+  "particuliers.objectif.p2b": "approuvées en 48 heures",
+  "particuliers.objectif.p2c": "Toutes les informations transmises demeurent strictement",
+  "particuliers.objectif.p2d": "confidentielles",
+  "particuliers.cta.soustitre": "Un spécialiste vous contacte dans les 48 heures — sans frais, sans engagement.",
+
+  // EviterFaillite
+  "faillite.bandeau": "Faites une demande de financement en ligne pour éviter la faillite — nous aidons les Canadiens de toutes les provinces à trouver une alternative. Consultation gratuite, sans engagement.",
+  "faillite.consequences.titre": "Conséquences de la faillite",
+  "faillite.consequences.1": "Perte possible de votre maison, auto et autres actifs",
+  "faillite.consequences.2": "Cote de crédit affectée pendant 7 ans (1re faillite) ou 14 ans (2e faillite)",
+  "faillite.consequences.3": "Difficulté à obtenir du crédit, un emploi ou un logement",
+  "faillite.consequences.4": "Impact sur votre réputation personnelle et professionnelle",
+  "faillite.etapes.titre": "Les étapes pour éviter la faillite",
+  "faillite.etape1.titre": "Consultation budgétaire gratuite",
+  "faillite.etape1.texte": "Un spécialiste en budget analysera votre situation financière et vous proposera des solutions adaptées.",
+  "faillite.etape3.lien": "En savoir plus →",
+
+  // DeuxiemeChanceCredit
+  "deuxieme.bandeau": "Faites une demande de financement en ligne pour une 2e chance au crédit — nous évaluons votre dossier rapidement et confidentiellement, sans frais d'analyse.",
+  "deuxieme.retablir.p2a": "Notre approche est entièrement basée sur la",
+  "deuxieme.retablir.p2b": "valeur de l'équité",
+  "deuxieme.retablir.p2c": "que vous détenez dans votre propriété immobilière. Même si votre dossier de crédit est défavorable, si vous avez de l'équité, nous pouvons vous proposer une solution de financement adaptée.",
+  "deuxieme.situations.titre": "Situations admissibles",
+  "deuxieme.situation.1": "Faillite antérieure (libérée ou non)",
+  "deuxieme.situation.2": "Proposition de consommateur en cours",
+  "deuxieme.situation.3": "Cote de crédit faible ou inexistante",
+  "deuxieme.situation.4": "Retards de paiement ou comptes en recouvrement",
+  "deuxieme.situation.5": "Revenus non traditionnels ou non documentés",
+  "deuxieme.important.titre": "Important à savoir",
+  "deuxieme.important.texte": "Les taux d'intérêt pour une 2e chance au crédit peuvent être plus élevés que les taux bancaires traditionnels en raison du niveau de risque. Cependant, en respectant vos obligations de paiement, vous pourrez progressivement rétablir votre cote de crédit et éventuellement accéder à du financement traditionnel à meilleur taux.",
+
+  // FinancementTemporaire
+  "temporaire.bandeau": "Refusé par votre banque ? Besoin de liquidités rapidement ? Faites une demande en ligne — un spécialiste évalue votre dossier dans les 48 heures, sans frais ni engagement.",
+  "temporaire.intro.p2": "Achat immobilier, refinancement, rénovations majeures, acquisition d'entreprise, financement d'équipements ou transition entre deux hypothèques — si vous détenez de l'équité dans un bien immobilier au Canada, nous pouvons vous aider.",
+  "temporaire.audience.titre": "À qui s'adresse le financement temporaire ?",
+  "temporaire.audience.1": "Particuliers avec problèmes de crédit ou faillite antérieure",
+  "temporaire.audience.2": "Travailleurs autonomes et revenus non traditionnels",
+  "temporaire.audience.3": "Projets de construction ou de rénovation majeure",
+  "temporaire.audience.4": "Achat de terrain ou propriété à revenus au Canada",
+  "temporaire.audience.5": "Acquisition d'entreprise ou d'équipements commerciaux",
+  "temporaire.audience.6": "Transition entre deux hypothèques (prêt pont)",
+
+  // Profil
+  "profil.pourquoi.titre": "Pourquoi nous choisir ?",
+  "profil.pourquoi.1": "Plus de 25 ans d'expérience en financement alternatif",
+  "profil.pourquoi.2": "Approbation en aussi peu que 48 heures",
+  "profil.pourquoi.3": "Confidentialité totale de vos informations",
+  "profil.pourquoi.4": "Financement basé sur l'équité, pas le crédit",
+  "profil.pourquoi.5": "Solutions personnalisées pour chaque situation",
+
+  // Breadcrumbs
+  "breadcrumb.services.particuliers": "Services pour particuliers",
+  "breadcrumb.eviter.faillite": "Éviter la faillite",
+  "breadcrumb.services": "Services",
+  "breadcrumb.deuxieme.credit": "2e chance au crédit",
+  "breadcrumb.temporaire": "Financement temporaire",
+  "breadcrumb.profil": "Profil",
 };
 
 // ── English defaults (keyed as <key>.en) ──────────────────
@@ -493,6 +555,74 @@ export const SITE_CONTENT_DEFAULTS_EN: Record<string, string> = {
     "Sorry, the page you are looking for does not exist or has been moved.",
   "notfound.home.en": "Back to Home",
   "notfound.back.en": "Previous Page",
+
+  // ServicesParticuliers — sub-service cards
+  "particuliers.service.1.titre.en": "Bridge & Temporary Financing",
+  "particuliers.service.1.desc.en": "Short-term financing solutions to meet your immediate needs, even if financial institutions cannot help you.",
+  "particuliers.service.2.titre.en": "Debt Consolidation",
+  "particuliers.service.2.desc.en": "Group all your debts into a single loan with one monthly payment. A temporary solution to regain control.",
+  "particuliers.service.3.titre.en": "2nd Chance Credit",
+  "particuliers.service.3.desc.en": "Poor credit history or a previous bankruptcy? We can help you get back on your feet financially.",
+  "particuliers.service.lien.en": "Learn More",
+  "particuliers.objectif.titre.en": "Our Goal",
+  "particuliers.objectif.p2a.en": "Loan applications are generally",
+  "particuliers.objectif.p2b.en": "approved within 48 hours",
+  "particuliers.objectif.p2c.en": "All information submitted remains strictly",
+  "particuliers.objectif.p2d.en": "confidential",
+  "particuliers.cta.soustitre.en": "A specialist will contact you within 48 hours — no fees, no obligation.",
+
+  // EviterFaillite
+  "faillite.bandeau.en": "Apply for financing online to avoid bankruptcy — we help Canadians in all provinces find an alternative. Free consultation, no obligation.",
+  "faillite.consequences.titre.en": "Consequences of Bankruptcy",
+  "faillite.consequences.1.en": "Possible loss of your home, car and other assets",
+  "faillite.consequences.2.en": "Credit score affected for 7 years (1st bankruptcy) or 14 years (2nd bankruptcy)",
+  "faillite.consequences.3.en": "Difficulty obtaining credit, employment or housing",
+  "faillite.consequences.4.en": "Impact on your personal and professional reputation",
+  "faillite.etapes.titre.en": "Steps to Avoid Bankruptcy",
+  "faillite.etape1.titre.en": "Free Budget Consultation",
+  "faillite.etape1.texte.en": "A budget specialist will analyze your financial situation and propose tailored solutions.",
+  "faillite.etape3.lien.en": "Learn more →",
+
+  // DeuxiemeChanceCredit
+  "deuxieme.bandeau.en": "Apply for financing online for a 2nd chance at credit — we assess your file quickly and confidentially, with no analysis fees.",
+  "deuxieme.retablir.p2a.en": "Our approach is entirely based on the",
+  "deuxieme.retablir.p2b.en": "equity value",
+  "deuxieme.retablir.p2c.en": "you hold in your real estate. Even if your credit history is unfavourable, if you have equity, we can offer you a tailored financing solution.",
+  "deuxieme.situations.titre.en": "Eligible Situations",
+  "deuxieme.situation.1.en": "Previous bankruptcy (discharged or not)",
+  "deuxieme.situation.2.en": "Consumer proposal in progress",
+  "deuxieme.situation.3.en": "Low or non-existent credit score",
+  "deuxieme.situation.4.en": "Late payments or accounts in collections",
+  "deuxieme.situation.5.en": "Non-traditional or undocumented income",
+  "deuxieme.important.titre.en": "Important to Know",
+  "deuxieme.important.texte.en": "Interest rates for 2nd chance credit may be higher than traditional bank rates due to the level of risk. However, by meeting your payment obligations, you can progressively rebuild your credit score and eventually access traditional financing at a better rate.",
+
+  // FinancementTemporaire
+  "temporaire.bandeau.en": "Turned down by your bank? Need liquidity quickly? Apply online — a specialist will assess your file within 48 hours, no fees, no obligation.",
+  "temporaire.intro.p2.en": "Real estate purchase, refinancing, major renovations, business acquisition, equipment financing or transition between two mortgages — if you hold equity in real estate in Canada, we can help.",
+  "temporaire.audience.titre.en": "Who Is Bridge Financing For?",
+  "temporaire.audience.1.en": "Individuals with credit issues or previous bankruptcy",
+  "temporaire.audience.2.en": "Self-employed workers and non-traditional income",
+  "temporaire.audience.3.en": "Construction or major renovation projects",
+  "temporaire.audience.4.en": "Land purchase or income property in Canada",
+  "temporaire.audience.5.en": "Business or commercial equipment acquisition",
+  "temporaire.audience.6.en": "Transition between two mortgages (bridge loan)",
+
+  // Profil
+  "profil.pourquoi.titre.en": "Why Choose Us?",
+  "profil.pourquoi.1.en": "Over 25 years of experience in alternative financing",
+  "profil.pourquoi.2.en": "Approval in as little as 48 hours",
+  "profil.pourquoi.3.en": "Full confidentiality of your information",
+  "profil.pourquoi.4.en": "Financing based on equity, not credit",
+  "profil.pourquoi.5.en": "Personalized solutions for every situation",
+
+  // Breadcrumbs
+  "breadcrumb.services.particuliers.en": "Services for Individuals",
+  "breadcrumb.eviter.faillite.en": "Avoid Bankruptcy",
+  "breadcrumb.services.en": "Services",
+  "breadcrumb.deuxieme.credit.en": "2nd Chance Credit",
+  "breadcrumb.temporaire.en": "Bridge Financing",
+  "breadcrumb.profil.en": "Profile",
 };
 
 export function getSiteContentDefault(key: string, fallback = "") {

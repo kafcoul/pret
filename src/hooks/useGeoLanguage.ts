@@ -59,12 +59,12 @@ export function useGeoLanguage() {
         // Still check geo in background to refine if browser lang is ambiguous
       }
 
-      // 2. Geo detection to confirm or override
+      // 2. Geo detection (Canada only) to confirm or override
       const fromIp = await detectFromIp();
       if (fromIp) {
         i18n.changeLanguage(fromIp);
-      } else if (!fromBrowser) {
-        // Fallback: Quebec is the primary market → French
+      } else {
+        // IP outside Canada or geo unavailable → French by default
         i18n.changeLanguage('fr');
       }
     })();

@@ -100,7 +100,7 @@ export default function Accueil() {
                 {c('accueil.services.titre', 'Nos services de financement')}
               </h2>
               <p className="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto">
-                {c('accueil.services.soustitre', 'Des solutions de financement ajustées à vos besoins partout au Canada, avec garanties immobilières en 1er ou 2e rang.')}
+                {c('accueil.services.soustitre', 'Des solutions sur mesure avec garanties immobilières en 1er ou 2e rang, pour particuliers et entreprises — peu importe votre profil financier.')}
               </p>
             </div>
           </AnimateOnScroll>
@@ -109,7 +109,7 @@ export default function Accueil() {
               <ServiceCard
                 icon={Users}
                 title={c('accueil.carte.1.titre', 'Particuliers')}
-                description={c('accueil.carte.1.desc', 'Solutions sur mesure pour les particuliers partout au Canada — peu importe votre historique de crédit ou votre situation financière.')}
+                description={c('accueil.carte.1.desc', 'Refusé par votre banque ? Travailleur autonome, faillite antérieure, revenus irréguliers — peu importe votre situation, nous évaluons votre dossier.')}
                 items={c('accueil.carte.1.items', 'Prêt rénovation\nAchat immobilier\nRefinancement\nConsolidation de dettes\nLettre de caution').split('\n').filter(Boolean)}
                 link="/services/particuliers"
               />
@@ -181,7 +181,7 @@ export default function Accueil() {
 
       {/* CTA */}
       <CTABanner
-        title={c('accueil.cta.titre', 'Votre financement, partout au Canada, en 48 heures')}
+        title={c('accueil.cta.titre', 'Obtenez votre financement en aussi peu que 48 heures')}
         subtitle={c('accueil.cta.soustitre', 'Remplissez notre formulaire en ligne — un spécialiste vous contacte rapidement, sans engagement.')}
       />
     </>

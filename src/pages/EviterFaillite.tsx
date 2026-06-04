@@ -12,16 +12,14 @@ export default function EviterFaillite() {
       <PageHero
         title={c('faillite.hero.titre', 'Éviter la faillite')}
         subtitle={c('faillite.hero.soustitre', 'Si vous détenez de l\'équité dans votre propriété, un prêt temporaire peut vous éviter la faillite — nous vous aidons à trouver une sortie avant qu\'il ne soit trop tard.')}
-        breadcrumb={[{ label: 'Éviter la faillite' }]}
+        breadcrumb={[{ label: c('breadcrumb.eviter.faillite', 'Éviter la faillite') }]}
       />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">
           <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-xl mb-10">
             <p className="text-primary-700 font-medium">
-              Faites une demande de financement en ligne pour éviter la faillite —
-              nous aidons les Canadiens de toutes les provinces à trouver une alternative.
-              Consultation gratuite, sans engagement.
+              {c('faillite.bandeau', 'Faites une demande de financement en ligne pour éviter la faillite — nous aidons les Canadiens de toutes les provinces à trouver une alternative. Consultation gratuite, sans engagement.')}
             </p>
           </div>
 
@@ -38,24 +36,24 @@ export default function EviterFaillite() {
               <AlertTriangle className="h-6 w-6 text-red-500 shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-serif font-bold text-lg text-red-700 mb-3">
-                  Conséquences de la faillite
+                  {c('faillite.consequences.titre', 'Conséquences de la faillite')}
                 </h3>
                 <ul className="space-y-2 text-red-700 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="font-bold">•</span>
-                    Perte possible de votre maison, auto et autres actifs
+                    {c('faillite.consequences.1', 'Perte possible de votre maison, auto et autres actifs')}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-bold">•</span>
-                    Cote de crédit affectée pendant <strong>7 ans</strong> (1re faillite) ou <strong>14 ans</strong> (2e faillite)
+                    {c('faillite.consequences.2', 'Cote de crédit affectée pendant 7 ans (1re faillite) ou 14 ans (2e faillite)')}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-bold">•</span>
-                    Difficulté à obtenir du crédit, un emploi ou un logement
+                    {c('faillite.consequences.3', 'Difficulté à obtenir du crédit, un emploi ou un logement')}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-bold">•</span>
-                    Impact sur votre réputation personnelle et professionnelle
+                    {c('faillite.consequences.4', 'Impact sur votre réputation personnelle et professionnelle')}
                   </li>
                 </ul>
               </div>
@@ -63,7 +61,7 @@ export default function EviterFaillite() {
           </div>
 
           <h2 className="font-serif text-2xl font-bold text-primary-700 mb-4">
-            Les étapes pour éviter la faillite
+            {c('faillite.etapes.titre', 'Les étapes pour éviter la faillite')}
           </h2>
           <div className="space-y-4 mb-10">
             <div className="bg-white rounded-xl border border-gray-200 p-5">
@@ -72,9 +70,9 @@ export default function EviterFaillite() {
                   1
                 </div>
                 <div>
-                  <h3 className="font-bold text-primary-700 mb-1">Consultation budgétaire gratuite</h3>
+                  <h3 className="font-bold text-primary-700 mb-1">{c('faillite.etape1.titre', 'Consultation budgétaire gratuite')}</h3>
                   <p className="text-gray-600 text-sm">
-                    Un spécialiste en budget analysera votre situation financière et vous proposera des solutions adaptées.
+                    {c('faillite.etape1.texte', 'Un spécialiste en budget analysera votre situation financière et vous proposera des solutions adaptées.')}
                   </p>
                 </div>
               </div>
@@ -102,7 +100,7 @@ export default function EviterFaillite() {
                   <p className="text-gray-600 text-sm">
                     {c('faillite.consolidation.texte', "Un prêt de consolidation vous permet de rembourser tous vos créanciers et de n'avoir qu'un seul paiement mensuel.")}{' '}
                     <Link to="/services/consolidation-dettes" className="text-accent-500 hover:underline">
-                      En savoir plus →
+                      {c('faillite.etape3.lien', 'En savoir plus →')}
                     </Link>
                   </p>
                 </div>

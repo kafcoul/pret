@@ -12,8 +12,8 @@ export default function ConsolidationDettes() {
         title={c('consolidation.hero.titre', 'Consolidation de dettes')}
         subtitle={c('consolidation.hero.soustitre', 'Regroupez toutes vos dettes en un seul paiement mensuel — une solution temporaire accessible aux Canadiens de toutes les provinces, même avec un mauvais crédit.')}
         breadcrumb={[
-          { label: 'Services', path: '/services/particuliers' },
-          { label: 'Consolidation de dettes' },
+          { label: c('breadcrumb.services', 'Services'), path: '/services/particuliers' },
+          { label: c('breadcrumb.consolidation', 'Consolidation de dettes') },
         ]}
       />
 

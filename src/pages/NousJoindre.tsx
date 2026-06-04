@@ -57,7 +57,7 @@ export default function NousJoindre() {
             <PageHero
                 title={c('contact.hero.titre', 'Nous joindre')}
                 subtitle={c('contact.hero.soustitre', "Contactez-nous pour toute question ou demande d'information")}
-                breadcrumb={[{ label: 'Nous joindre' }]}
+                breadcrumb={[{ label: c('breadcrumb.nous.joindre', 'Nous joindre') }]}
             />
 
             <section className="py-16">

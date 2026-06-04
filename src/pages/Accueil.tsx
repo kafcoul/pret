@@ -31,7 +31,7 @@ export default function Accueil() {
               {c('accueil.hero.badge', 'Prêteur alternatif canadien depuis 1998')}
             </div>
             <h1 className="font-serif text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
-              {c('accueil.hero.titre', 'La solution de financement alternatif partout au Canada')}
+              {c('accueil.hero.titre', 'Quand votre banque dit non, nous trouvons une solution')}
             </h1>
             <p className="text-base md:text-xl text-primary-100 mb-6 md:mb-8 leading-relaxed max-w-2xl">
               {c('accueil.hero.soustitre', 'Financement approuvé en aussi peu que 48 heures, garanti par vos actifs immobiliers. Peu importe votre province, votre situation d\'emploi ou votre dossier de crédit — nous trouvons une solution.')}

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { useSiteContent } from '../../lib/SiteContentContext';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +8,7 @@ export default function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [servicesOpen, setServicesOpen] = useState(false);
     const location = useLocation();
-    const { c, lang, setLang } = useSiteContent();
+    const { c, lang } = useSiteContent();
     const { t } = useTranslation();
     const mobileMenuRef = useRef<HTMLDivElement>(null);
     const services = [
@@ -93,15 +93,6 @@ export default function Navbar() {
                     </Link>
 
                     <div className="hidden lg:flex items-center gap-1">
-                        {/* Language toggle */}
-                        <button
-                            onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')}
-                            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-primary-700 hover:bg-gray-50 transition-colors"
-                            aria-label={lang === 'fr' ? 'Switch to English' : 'Passer en français'}
-                        >
-                            <Globe className="h-4 w-4" />
-                            {t('lang.toggle')}
-                        </button>
                         {navLinks.map((link) =>
                             link.dropdown ? (
                                 <div
@@ -252,14 +243,6 @@ export default function Navbar() {
                             </Link>
                         )
                     )}
-                    {/* Mobile language toggle */}
-                    <button
-                        onClick={() => { setLang(lang === 'fr' ? 'en' : 'fr'); setMobileOpen(false); }}
-                        className="flex items-center gap-2 w-full px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 mt-1"
-                    >
-                        <Globe className="h-4 w-4" />
-                        {lang === 'fr' ? 'English' : 'Français'}
-                    </button>
                     <Link
                         to="/demande-en-ligne"
                         onClick={() => setMobileOpen(false)}

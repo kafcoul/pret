@@ -1,15 +1,11 @@
 import { useEffect } from 'react';
 import i18n from '../lib/i18n';
 
-const LS_KEY = 'sff_language';
+// Key used ONLY when the user explicitly clicks the language switcher
+export const USER_LANG_KEY = 'sff_user_lang';
 
-// Provinces where French is dominant → fr
+// QC and NB → French; all other Canadian provinces/territories → English
 const FRENCH_PROVINCES = new Set(['QC', 'NB']);
-
-// Provinces where English is dominant → en
-const ENGLISH_PROVINCES = new Set([
-  'ON', 'BC', 'AB', 'MB', 'SK', 'NS', 'PE', 'NL', 'NT', 'NU', 'YT',
-]);
 
 interface IpApiResponse {
   region_code?: string;
@@ -17,56 +13,41 @@ interface IpApiResponse {
   error?: boolean;
 }
 
-function detectFromBrowser(): string | null {
-  const langs = navigator.languages ?? [navigator.language];
-  for (const lang of langs) {
-    if (lang.toLowerCase().startsWith('fr')) return 'fr';
-    if (lang.toLowerCase().startsWith('en')) return 'en';
-  }
-  return null;
-}
-
-async function detectFromIp(): Promise<string | null> {
+async function detectFromIp(): Promise<string> {
   try {
-    const res = await fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) });
-    if (!res.ok) return null;
+    const res = await fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(4000) });
+    if (!res.ok) return 'fr';
     const data: IpApiResponse = await res.json();
-    if (data.error || data.country_code !== 'CA') return null;
+    if (data.error) return 'fr';
 
+    if (data.country_code !== 'CA') {
+      // Outside Canada: use browser language preference
+      const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+      for (const l of langs) {
+        if (l.toLowerCase().startsWith('fr')) return 'fr';
+        if (l.toLowerCase().startsWith('en')) return 'en';
+      }
+      return 'fr';
+    }
+
+    // Canadian IP: province decides the language
     const province = data.region_code ?? '';
-    if (FRENCH_PROVINCES.has(province)) return 'fr';
-    if (ENGLISH_PROVINCES.has(province)) return 'en';
-    return null;
+    return FRENCH_PROVINCES.has(province) ? 'fr' : 'en';
   } catch {
-    return null;
+    return 'fr';
   }
 }
 
 export function useGeoLanguage() {
   useEffect(() => {
-    // If user already chose a language, respect it
-    const saved = localStorage.getItem(LS_KEY);
-    if (saved === 'fr' || saved === 'en') {
-      i18n.changeLanguage(saved);
+    // Only skip geo if the user explicitly changed the language themselves
+    const userChoice = localStorage.getItem(USER_LANG_KEY);
+    if (userChoice === 'fr' || userChoice === 'en') {
+      i18n.changeLanguage(userChoice);
       return;
     }
 
-    (async () => {
-      // 1. Try browser language first (fast, no network)
-      const fromBrowser = detectFromBrowser();
-      if (fromBrowser) {
-        i18n.changeLanguage(fromBrowser);
-        // Still check geo in background to refine if browser lang is ambiguous
-      }
-
-      // 2. Geo detection (Canada only) to confirm or override
-      const fromIp = await detectFromIp();
-      if (fromIp) {
-        i18n.changeLanguage(fromIp);
-      } else {
-        // IP outside Canada or geo unavailable → French by default
-        i18n.changeLanguage('fr');
-      }
-    })();
+    // Always detect by IP — no caching between sessions
+    detectFromIp().then((lang) => i18n.changeLanguage(lang));
   }, []);
 }

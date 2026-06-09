@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useEffect, useCallback, type React
 import { supabase } from './supabaseClient';
 import { getSiteContentDefault } from './siteContentDefaults';
 import i18n from './i18n';
+import { USER_LANG_KEY } from '../hooks/useGeoLanguage';
 
 // ── Types ──────────────────────────────────────────────────
 interface SiteContentContextValue {
@@ -65,7 +66,8 @@ export function SiteContentProvider({ children }: { children: ReactNode }) {
 
     const setLang = useCallback((newLang: string) => {
         i18n.changeLanguage(newLang);
-        localStorage.setItem('sff_language', newLang);
+        // Mark as explicit user choice so geo-detection doesn't override on next visit
+        localStorage.setItem(USER_LANG_KEY, newLang);
         setLangState(newLang);
         document.documentElement.lang = newLang === 'fr' ? 'fr-CA' : 'en-CA';
     }, []);
